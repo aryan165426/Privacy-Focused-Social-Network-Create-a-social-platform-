@@ -5,7 +5,7 @@ The Decentralized Video Sharing Platform (DVSP) is a blockchain-based solution d
 
 With this solution, creators can upload videos, set metadata (such as title, description, and category), and accept tips from viewers. The smart contract ensures that only the uploader can modify the video metadata, and it includes protections against excessive tipping frequency. Additionally, a platform fee is applied to each tip, providing a sustainable revenue stream for platform maintenance.
 
-Project Vision
+##Project Vision
 The vision for DVSP is to create a fully decentralized video-sharing ecosystem that empowers creators by providing a transparent and fair way to share their content and earn revenue. By eliminating intermediaries and central authorities, DVSP aims to:
 
 Give creators complete ownership over their content.
