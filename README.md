@@ -1,7 +1,3 @@
-Here's a README in markdown format for the smart contract of the **Decentralized Video Sharing Platform** based on the table of contents you mentioned:
-
----
-
 # Decentralized Video Sharing Platform (DVSP) Smart Contract
 
 ## Table of Contents
