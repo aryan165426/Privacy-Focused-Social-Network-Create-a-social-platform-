@@ -1,6 +1,6 @@
 Decentralized Video Sharing Platform (DVSP)
 
-Project Description
+##Project Description
 The Decentralized Video Sharing Platform (DVSP) is a blockchain-based solution designed to allow users to upload, share, and monetize videos while retaining full control over their content and revenue. The platform uses smart contracts deployed on the Aptos blockchain to manage video metadata, tips, and platform fees securely.
 
 With this solution, creators can upload videos, set metadata (such as title, description, and category), and accept tips from viewers. The smart contract ensures that only the uploader can modify the video metadata, and it includes protections against excessive tipping frequency. Additionally, a platform fee is applied to each tip, providing a sustainable revenue stream for platform maintenance.
