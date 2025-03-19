@@ -1,105 +1,45 @@
-Decentralized Video Sharing Platform
-Overview
-The Decentralized Video Sharing Platform (DVSP) is an innovative blockchain-based platform that allows users to share videos while retaining full control over their content and revenue. Unlike traditional, centralized video platforms, DVSP utilizes blockchain technology to empower creators by giving them ownership of their content, enabling transparent monetization options, and eliminating intermediaries.
+Decentralized Video Sharing Platform (DVSP)
 
-By using decentralized storage systems like IPFS or Arweave and the Aptos blockchain, creators can ensure that their videos remain secure, private, and easily accessible. The platform also provides direct monetization opportunities, such as tips, subscriptions, or advertisements, all handled transparently through smart contracts.
+Project Description
+The Decentralized Video Sharing Platform (DVSP) is a blockchain-based solution designed to allow users to upload, share, and monetize videos while retaining full control over their content and revenue. The platform uses smart contracts deployed on the Aptos blockchain to manage video metadata, tips, and platform fees securely.
 
+With this solution, creators can upload videos, set metadata (such as title, description, and category), and accept tips from viewers. The smart contract ensures that only the uploader can modify the video metadata, and it includes protections against excessive tipping frequency. Additionally, a platform fee is applied to each tip, providing a sustainable revenue stream for platform maintenance.
+
+Project Vision
+The vision for DVSP is to create a fully decentralized video-sharing ecosystem that empowers creators by providing a transparent and fair way to share their content and earn revenue. By eliminating intermediaries and central authorities, DVSP aims to:
+
+Give creators complete ownership over their content.
+Offer direct, blockchain-based monetization options such as tipping and subscriptions.
+Create a transparent revenue-sharing system that ensures creators are fairly compensated for their work.
+Build a decentralized video platform that is resistant to censorship and control by any central entity.
+Future Scope
+In the future, DVSP aims to expand its functionality and improve user experience by adding the following features:
+
+Subscription Models: Content creators can offer subscription-based access to premium content with smart contracts handling payments and access control.
+Advertisement Integration: Enable creators to earn revenue from ads, with smart contracts distributing revenue fairly between the platform and the content creator.
+Advanced Analytics: Offer content creators real-time analytics and insights into their video performance, tips, and subscriber base.
+Video Streaming and Hosting: Extend the platform's capabilities to stream videos directly from decentralized storage (such as IPFS or Arweave), providing seamless viewing experiences.
+Community Governance: Implement a decentralized governance system where token holders or creators can vote on changes or updates to the platform.
 Key Features
-Decentralized Storage: Store videos securely on decentralized platforms like IPFS or Arweave, ensuring content ownership and control.
-Blockchain Monetization: Directly earn cryptocurrency via tips, subscriptions, and advertisements, without relying on intermediaries.
-Transparent Revenue: Track and manage revenue generated from videos in real-time using Aptos blockchain-powered smart contracts.
-User Control: Creators can decide who has access to their videos, with granular privacy and access control.
-Aptos Blockchain Integration: Fast, scalable, and secure blockchain solution for handling transactions and smart contracts.
-Ownership and Security: Decentralization ensures creators retain full control over their content and data.
-Tech Stack
-Blockchain: Aptos
-Smart Contracts: Move (Aptos Smart Contract Language)
-Frontend: React.js (or other frontend framework)
-Backend: Node.js (for server-side operations)
-Storage: IPFS or Arweave (for decentralized file storage)
-Authentication: Aptos Wallet (for user authentication and blockchain interactions)
-Project Setup
-Prerequisites
-Node.js: Ensure Node.js (v16.x or higher) is installed. Download Node.js.
-Aptos CLI: Install the Aptos CLI to interact with the Aptos blockchain. Aptos CLI Setup.
-IPFS or Arweave: Set up decentralized storage via IPFS or Arweave. You can use services like Pinata for IPFS or Arweave for long-term storage.
-Installation
-Clone the Repository:
-bash
-Copy
-git clone https://github.com/aryan165426/dvsp.git
-cd dvsp
-Install Dependencies:
-bash
-Copy
-npm install
-Set Up Aptos Wallet:
+Video Metadata Management:
 
-Create an Aptos Wallet using Aptos Wallet Guide.
-Fund your wallet with testnet tokens using the Aptos Faucet.
-Deploy Smart Contracts:
+Allows video creators to upload metadata (e.g., title, description, category) and store it on the blockchain.
+Metadata is immutable and only the uploader can update it.
+Tip System:
 
-Deploy the smart contracts using the Aptos CLI. These contracts handle the upload process, video metadata storage, and revenue sharing.
-bash
-Copy
-aptos move publish --profile <0x280267696e01732749a3fd7ceb4d8470c00dbe61913a6b962287da2fc7bb7fa5>
-Frontend Configuration:
+Viewers can tip content creators directly in cryptocurrency (Aptos Coin).
+Platform charges a small fee (5%) on each tip to support ongoing development and maintenance.
+The contract ensures that tips are not spammed by limiting the frequency of tips per viewer.
+Platform Fee:
 
-Set up the contract addresses and network configurations in the frontend to interact with the deployed smart contracts.
-Running the Application
-To run the application locally:
+A 5% platform fee is deducted from each tip and is retained by the platform (in the current implementation, this fee is not deposited anywhere, but it could be in future versions).
+Security and Access Control:
 
-bash
-Copy
-npm run dev
-This will start the development server at http://localhost:3000.
+Ensures that only the uploader can modify video metadata using access control checks.
+Protects the platform from abuse by ensuring minimum time intervals between tips from the same viewer.
+Decentralized Storage Integration:
 
-Frontend Overview
-The frontend is built with React.js and interacts with the blockchain via Aptos SDK and smart contracts. You can customize the user interface to fit your branding or add new features by modifying the components under the src folder.
+The platform uses decentralized storage solutions like IPFS or Arweave to store the actual video files, ensuring content remains publicly accessible and censorship-resistant.
+Blockchain Transparency:
 
-How It Works
-1. Uploading Videos
-Users can upload videos via the platform’s interface. After uploading, the video content will be stored on a decentralized storage system like IPFS or Arweave. The metadata (e.g., title, description, creator) is stored on the Aptos blockchain, creating an immutable record.
-
-2. Monetizing Content
-Creators can set a price for viewing their videos, enable tips, or integrate ads. Smart contracts on the Aptos blockchain handle these monetization features:
-
-Tipping: Viewers can tip creators directly in cryptocurrency.
-Subscriptions: Users can subscribe to content creators to view exclusive content.
-Advertisements: Creators can choose to include ads, and the smart contract ensures fair revenue distribution.
-3. Revenue Tracking
-Creators can track their earnings in real-time through the platform, which pulls transaction data from the Aptos blockchain. Revenue from tips, subscriptions, and ads is processed securely and transparently through smart contracts.
-
-4. Content Access Control
-Creators can manage who has access to their videos. They can make content public, private, or available only to paying users, ensuring full control over how their videos are shared.
-
-Smart Contract Architecture
-The Move smart contracts deployed on the Aptos blockchain handle all key operations, including:
-
-Video Upload: Handles the storage of video metadata on the blockchain.
-Monetization: Manages tips, subscription payments, and ad revenue.
-Revenue Distribution: Distributes earnings according to preset rules.
-Access Control: Ensures only authorized users can view private content.
-These contracts ensure secure, transparent, and fair interactions for both creators and viewers.
-
-Contributing
-We welcome contributions from the community! To contribute to this project, please follow these steps:
-
-Fork the repository.
-Create a new branch (git checkout -b feature-name).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Open a pull request.
-Please ensure your code adheres to the project’s coding style and includes tests where necessary.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-Acknowledgements
-Aptos for providing the blockchain infrastructure.
-IPFS and Arweave for decentralized video storage.
-Move for smart contract development on the Aptos blockchain.
-React.js for building the frontend.
-Contact
-If you have any questions, suggestions, or feedback, feel free to reach out to us via email-jangidmanisha906@gmail.com.
+All transactions (video uploads, tips, and metadata changes) are recorded on the Aptos blockchain, ensuring full transparency and security.
