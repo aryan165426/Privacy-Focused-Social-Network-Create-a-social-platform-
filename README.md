@@ -27,7 +27,7 @@ Installation
 Clone the Repository:
 bash
 Copy
-git clone https://github.com/your-username/dvsp.git
+git clone https://github.com/aryan165426/dvsp.git
 cd dvsp
 Install Dependencies:
 bash
@@ -42,7 +42,7 @@ Deploy Smart Contracts:
 Deploy the smart contracts using the Aptos CLI. These contracts handle the upload process, video metadata storage, and revenue sharing.
 bash
 Copy
-aptos move publish --profile <your-profile>
+aptos move publish --profile <0x280267696e01732749a3fd7ceb4d8470c00dbe61913a6b962287da2fc7bb7fa5>
 Frontend Configuration:
 
 Set up the contract addresses and network configurations in the frontend to interact with the deployed smart contracts.
